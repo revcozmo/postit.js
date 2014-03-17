@@ -1,0 +1,23 @@
+{
+  "name": "postit",
+  "version": "0.0.0",
+  "description": "encrypted notes",
+  "main": "lib/index.js",
+  "bin": {
+    "postit": "./bin/postit"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "author": "Ben Ripkens <bripkens.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "optimist": "^0.6.1",
+    "node-uuid": "^1.4.1",
+    "string": "^1.8.0",
+    "moment": "^2.5.1",
+    "underscore": "^1.6.0",
+    "gpg": "^0.3.2",
+    "colors": "^0.6.2"
+  }
+}

@@ -13,6 +13,8 @@ date) is currently stored in clear text but may also be encrypted in a
 future version. This being said, you won't notice that notes are stored in
 an encrypted form. postit.js completely hides this for you.
 
+![postit example](https://raw.github.com/bripkens/postit.js/master/example.gif)
+
 ## Installation
 
 postit.js is in a very early stage and will likely evolve over the next few
@@ -80,3 +82,4 @@ postit rm <note id>
  - sorting notes in the overview
  - possibility to set due date
  - full text search (note contents)
+ - encrypted meta.json file

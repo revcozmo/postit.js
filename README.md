@@ -25,7 +25,7 @@ few manual steps.
     `git clone https://github.com/bripkens/postit.js.git`
  2. Download dependencies using `npm install`.
  3. Make the `postit` executable globally accessible. To do so navigate into
-    the closed repository and run `npm link`.
+    the cloned repository and run `npm link`.
 
 You will also need GPG and the `gpg` executable should be on your `PATH`.
 

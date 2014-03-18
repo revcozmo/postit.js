@@ -73,6 +73,20 @@ postit edit <note id>
 postit rm <note id>
 ```
 
+## Transfering private keys between computers
+
+To share keys between computers you have a few simple and secure options.
+
+ 1. via USB flash drive or similar
+ 2. encrypted via email or similar
+
+You can export your key via
+`gpg --export-secret-keys $POSTIT_KEY_ID > postit.asc`
+and import them on the other computer via
+`gpg --allow-secret-key-import --import postit.asc`.
+At last, you will also need to assure that the key belongs to you. You can do
+this via `gpg --edit $POSTIT_KEY_ID` and the `trust` command.
+
 ## TODO
 
  - provide help on the command line

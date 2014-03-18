@@ -4,7 +4,7 @@ I love notes. Preferably sticky or post-it notes. Sometimes though, these notes
 are not sufficient. This is the case when notes are supposed to be long-lived
 and shared between my workplace and home. Digital solutions like Evernote exist,
 but I could never get used to them. postit.js is my approach to solve this issue
-first and foremost for myself. If you find postit.js interesting, feel
+in a nerdy way. If you find postit.js interesting, feel
 free to give it a try.
 
 postit.js is incredibly simple: It encrypts each note using GPG and stores it

@@ -4,7 +4,7 @@ I love notes. Preferably sticky or post-it notes. Sometimes though, these notes
 are not sufficient. This is the case when notes are supposed to be long-lived
 and shared between my workplace and home. Digital solutions like Evernote exist,
 but I could never get used to them. postit.js is my approach to solve this issue
-first and foremost for myself. If you find postit.js interesting, feel
+in a nerdy way. If you find postit.js interesting, feel
 free to give it a try.
 
 postit.js is incredibly simple: It encrypts each note using GPG and stores it
@@ -25,7 +25,7 @@ few manual steps.
     `git clone https://github.com/bripkens/postit.js.git`
  2. Download dependencies using `npm install`.
  3. Make the `postit` executable globally accessible. To do so navigate into
-    the closed repository and run `npm link`.
+    the cloned repository and run `npm link`.
 
 You will also need GPG and the `gpg` executable should be on your `PATH`.
 
@@ -72,6 +72,20 @@ postit edit <note id>
 ```
 postit rm <note id>
 ```
+
+## Transfering secret keys between computers
+
+To share keys between computers you have a few simple and secure options.
+
+ 1. via USB flash drive or similar
+ 2. encrypted via email or similar
+
+You can export your key via
+`gpg --export-secret-keys $POSTIT_KEY_ID > postit.asc`
+and import them on the other computer via
+`gpg --allow-secret-key-import --import postit.asc`.
+At last, you will also need to assure that the key belongs to you. You can do
+this via `gpg --edit $POSTIT_KEY_ID` and the `trust` command.
 
 ## TODO
 

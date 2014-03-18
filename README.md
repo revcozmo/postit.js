@@ -73,7 +73,7 @@ postit edit <note id>
 postit rm <note id>
 ```
 
-## Transfering private keys between computers
+## Transfering secret keys between computers
 
 To share keys between computers you have a few simple and secure options.
 
